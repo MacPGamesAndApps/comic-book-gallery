@@ -59,6 +59,11 @@ namespace ComicBookGallery.Data
             }
         };
 
+        public ComicBook[] GetComicBooks()
+        {
+            return _comicBooks;
+        }
+
         public ComicBook GetComicBook(int id)
         {
             ComicBook comicBook = _comicBooks.FirstOrDefault(book => book.Id == id);
